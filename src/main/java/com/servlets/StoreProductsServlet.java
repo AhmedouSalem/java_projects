@@ -228,7 +228,7 @@ public class StoreProductsServlet extends HttpServlet {
 
 			// Appeler la méthode createProd pour insérer le produit dans la base de données
 			productSer.updateProduct(product);
-
+ 
 			response.sendRedirect("produits.st");
 		}
 
