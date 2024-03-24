@@ -1,0 +1,129 @@
+* {
+	border: 0;
+	padding: 0;
+}
+
+.penguin-logo {
+	width: 200px;
+}
+
+.head-section {
+	background-color: rgba(255, 251, 240, 1);
+}
+
+.penguin-navbar {
+	background-color: 0;
+}
+
+h1 {
+	font-family: "Bebas Neue", cursive;
+}
+
+#text-style {
+	color: rgba(250, 190, 76, 1);
+	font-size: 80px;
+}
+
+.text-style2 {
+	font-size: 80px;
+}
+
+.penguin-catagory, .text-style2 {
+	color: rgba(54, 57, 88, 1);
+}
+
+.penguin-card-img {
+	padding: 5%;
+	background-color: rgba(241, 241, 241, 1);
+	margin: 4% auto;
+}
+
+.penguin-info {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+}
+
+.penguin-card-border, .penguin-card-img {
+	border-radius: 1em;
+}
+
+.price-text-style {
+	color: rgba(250, 190, 76, 1);
+	font-weight: bold;
+}
+
+.penguin-card-footer, .penguin-card-border {
+	background-color: white;
+	border: 0;
+}
+
+.penguin-btn {
+	background-color: rgba(164, 188, 70, 1);
+	color: white;
+}
+
+.footer-section {
+	background-color: hsla(72, 47%, 51%, 0.486);
+	padding: 3% 1% 1% 1%;
+}
+
+/*** Style cart ***/
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+.size span {
+	font-size: 11px;
+}
+
+.color span {
+	font-size: 11px;
+}
+
+.product-deta {
+	margin-right: 70px;
+}
+
+.gift-card:focus {
+	box-shadow: none;
+    border: none; /* Supprime la bordure par défaut */
+    outline: none; /* Supprime l'outline qui apparaît lorsqu'un élément est en focus */
+}
+
+.pay-button {
+	color: #fff;
+}
+
+.pay-button:hover {
+	color: #fff;
+}
+
+.pay-button:focus {
+	color: #fff;
+	box-shadow: none;
+}
+
+.text-grey {
+	color: #a39f9f;
+}
+
+.qty i {
+	font-size: 11px;
+}

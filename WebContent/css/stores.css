@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.panel-heading {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.panel{
+	margin: 10px;
+}
+
+.row{
+	margin:10px;
+	color:red;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>market_place</display-name>
+	<welcome-file-list>
+		<welcome-file>ProductsView</welcome-file>
+	</welcome-file-list>
+	<!-- ProductsView servlet -->
+	<servlet>
+		<description>Controller de la vue des produits</description>
+		<servlet-name>ProductsView</servlet-name>
+		<servlet-class>com.servlets.ProductsView</servlet-class>
+		<load-on-startup>0</load-on-startup>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ProductsView</servlet-name>
+		<url-pattern>/ProductsView</url-pattern>
+	</servlet-mapping>
+	<!-- Login servlet -->
+	<servlet>
+		<description>La servlet gérant la connexion des utilisateurs
+			</description>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.servlets.LoginServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	<!-- ShowImageServlet -->
+	<servlet>
+		<description>Read image from database</description>
+		<servlet-name>ShowImage</servlet-name>
+		<servlet-class>com.servlets.ShowImage</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ShowImage</servlet-name>
+		<url-pattern>/ShowImage</url-pattern>
+	</servlet-mapping>
+	<!-- AddToCart servlet -->
+	<servlet>
+		<description>Add Product to Cart</description>
+		<servlet-name>AddToCart</servlet-name>
+		<servlet-class>com.servlets.AddToCart</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddToCart</servlet-name>
+		<url-pattern>/AddToCart</url-pattern>
+	</servlet-mapping>
+	<!-- Logout Servlet -->
+	<servlet>
+		<description>La servlet permenttant la déconnexion du site
+			</description>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.servlets.LogoutServlet</servlet-class>
+		<async-supported>true</async-supported>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
