@@ -40,6 +40,7 @@ public class MyOrders extends HttpServlet {
 			OrderServiceImplements orderServiceImplements = new OrderServiceImplements();
 			ArrayList<OrderBean> ordersList = orderServiceImplements.getAllOrders(customerBean.getCustomerId());
 			request.setAttribute("ordersList", ordersList);
+			request.setAttribute("cartCount", customerBean.getCartCount());
 			// TODO Auto-generated method stub
 			request.getRequestDispatcher("./myorders.jsp").forward(request, response);;
 		} else {

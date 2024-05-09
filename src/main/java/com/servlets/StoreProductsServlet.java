@@ -70,7 +70,7 @@ public class StoreProductsServlet extends HttpServlet {
 			String mc = request.getParameter("motCle");
 			List<StoresBean> stores = storesService.storeParNameAr("%" + mc + "%");
 			request.setAttribute("stores", stores);
-			response.sendRedirect("index.st");
+			request.getRequestDispatcher("./stores/stores.jsp").forward(request, response);
 		} else if ((path.equals("/saveStore.st")) && (request.getMethod().equals("POST"))) {
 
 			String storeNameFr = request.getParameter("storeNameFr");

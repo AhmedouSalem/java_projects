@@ -13,7 +13,8 @@
 					<img src="./Images/commande.png" width="70">
 					<div class="d-flex flex-column ml-2">
 						<span>Vos commandes</span><span class="text-black-50">Suivre,
-							retourner, annuler ou acheter à nouveau en toute conformité 
+							retourner, annuler ou acheter à nouveau en toute conformité
+							</span> 
 					</div>
 				</div>
 			</div>
@@ -26,6 +27,7 @@
 						<span>Vos addresses</span><span class="text-black-50">
 							Modifier les address et les préferences de livraison des
 							commandes et des cadeaux 
+							</span>
 					</div>
 				</div>
 			</div>
@@ -37,7 +39,7 @@
 					<div class="d-flex flex-column ml-2">
 						<span>Lancez votre magasin</span><span class="text-black-50">
 							Devenir vendeur et atteindre vos objectifs commerciaux à travers
-							nos services exceptionnelle 
+							nos services exceptionnelle </span>
 					</div>
 				</div>
 			</div>
@@ -48,7 +50,7 @@
 					<img src="./Images/payment.png" width="70">
 					<div class="d-flex flex-column ml-2">
 						<span>Vos paiements</span><span class="text-black-50">
-							Afficher toutes les transactions 
+							Afficher toutes les transactions </span>
 					</div>
 				</div>
 			</div>

@@ -15,7 +15,7 @@
 		<button class="tablinks" onclick="openCity(event, 'shipped')">Livrée</button>
 	</div>
 
-	<div id=pending " class="tabcontent">
+	<div id="pending" class="tabcontent">
 		<h3>En attente</h3>
 		<table id="pendingTable" class="display">
 			<thead>

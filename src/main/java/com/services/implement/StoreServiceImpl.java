@@ -91,7 +91,7 @@ public class StoreServiceImpl implements StoreService {
 	public StoresBean editStore(StoresBean store) {
 		Connection cnx = DBUtil.provideConnection();
 		try {
-			PreparedStatement ps = cnx.prepareStatement("update stores set (store_name_ar=?,store_name_fr=?,phone=?,email=?,street,city=?,stores_active=?,credit=?)"
+			PreparedStatement ps = cnx.prepareStatement("update stores set store_name_ar=?,store_name_fr=?,phone=?,email=?,street,city=?,stores_active=?,credit=?"
 					+ " where store_id=?");
 			ps.setString(1, store.getStoreNameAr());
 			ps.setString(2, store.getStoreNameFr());

@@ -15,6 +15,7 @@ public class ProductBean implements Serializable {
 	private String prodBrand;
 	private int prodQuantity;
 	private InputStream prodImage;
+	private String description;
 
 	// Constructors
 	public ProductBean() {
@@ -124,5 +125,13 @@ public class ProductBean implements Serializable {
 
 	public void setProdImage(InputStream prodImage) {
 		this.prodImage = prodImage;
+	}
+	
+	public String getDescription() {
+		return description;
+	}
+	
+	public void setDescription(String description) {
+		this.description = description;
 	}
 }

@@ -70,17 +70,19 @@
 								<li class="nav-item"><a class="nav-link"
 									href="account.jsp?cartCount=${cartCount}">Mon compte</a></li>
 							</c:if>
-							<!-- Utilisation de Bootstrap pour superposer le badge sur l'icône panier -->
-							<li class="nav-item"><a class="nav-link"
-								href="./AddToCart?redirect=goToCart&cartCount=${not empty cartCount ? cartCount : param.cartCount}">Panier<span
-									class="position-relative"> <!-- Icône du panier --> <i
-										class="fa fa-shopping-cart"></i> <!-- Badge pour afficher le nombre de produits -->
-										<span
-										class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
-											${not empty cartCount ? cartCount : param.cartCount} <!-- Remplacez ce nombre par le nombre réel de produits -->
+							<c:if test="${not empty sessionScope.isRegistred }">
+								<!-- Utilisation de Bootstrap pour superposer le badge sur l'icône panier -->
+								<li class="nav-item"><a class="nav-link"
+									href="./AddToCart?redirect=goToCart&cartCount=${not empty cartCount ? cartCount : param.cartCount}">Panier<span
+										class="position-relative"> <!-- Icône du panier --> <i
+											class="fa fa-shopping-cart"></i> <!-- Badge pour afficher le nombre de produits -->
+											<span
+											class="badge rounded-pill bg-danger position-absolute top-0 start-100 translate-middle">
+												${not empty cartCount ? cartCount : param.cartCount} <!-- Remplacez ce nombre par le nombre réel de produits -->
+										</span>
 									</span>
-								</span>
-							</a></li>
+								</a></li>
+							</c:if>
 							<c:if test="${empty sessionScope.isRegistred}">
 								<li class="nav-item"><a class="nav-link" type="button"
 									id="form-open"> Se connecter </a></li>

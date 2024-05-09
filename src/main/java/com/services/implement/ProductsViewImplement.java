@@ -74,6 +74,7 @@ public class ProductsViewImplement implements ProductsService {
 				product.setProdBrand(rs.getString("brand_name_fr"));
 				product.setProdCategory(rs.getString("category_name_fr"));
 				product.setProdQuantity(rs.getInt("quantity"));
+				product.setDescription(rs.getNString("description"));
 
 				products.add(product);
 
@@ -161,6 +162,7 @@ public class ProductsViewImplement implements ProductsService {
 				product.setProdBrand(rs.getString("brand_name_fr"));
 				product.setProdCategory(rs.getString("category_name_fr"));
 				product.setProdQuantity(rs.getInt("quantity"));
+				product.setDescription(rs.getString("description"));
 			}
 
 		} catch (SQLException e) {
