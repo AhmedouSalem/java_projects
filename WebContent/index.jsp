@@ -43,7 +43,7 @@
 						<div
 							class="card-footer d-flex justify-content-between align-items-center penguin-card-footer">
 							<div>
-								<h3 class="price-text-style">${product.listPrice}</h3>
+								<h3 class="price-text-style">${product.listPrice} MRU</h3>
 							</div>
 							<div>
 								<c:choose>

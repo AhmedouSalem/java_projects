@@ -159,6 +159,7 @@ public class CustomerServiceImplement implements CustomerServices {
 				customer.setCartCount(rs.getInt("num_products_in_cart"));
 				customer.setIsActive(rs.getInt("is_active"));
 				customer.setVerifyCode(rs.getInt("verify_code"));
+				customer.setSolde(rs.getDouble("solde"));
 
 				return customer;
 			}

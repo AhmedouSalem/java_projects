@@ -36,14 +36,16 @@
 						<tr>
 							<td>${order.orderId}</td>
 							<td>${order.requiredDate}</td>
-							<td>${order.discount}</td>
-							<td>${order.totalPrice}</td>
+							<td>${order.discount}%</td>
+							<td>${order.totalPrice} MRU</td>
 							<td>${order.receiver}</td>
 							<td>${order.orderDate}</td>
-							<td>${order.orderPriceDelivery}</td>
+							<td>${order.orderPriceDelivery} MRU</td>
 							<td>
 								<button type="button" class="btn btn-info"
 									onclick="openModal(${order.orderId})">Voir détails</button>
+								<button type="button" class="btn btn-danger"
+									onclick="openModal(${order.orderId})">Annuler</button>
 							</td>
 						</tr>
 					</c:if>

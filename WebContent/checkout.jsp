@@ -34,7 +34,7 @@
 					<div>
 						<label for="pricedelivery">Service de livraison</label> <input
 							id="pricedelivery" name="pricedelivery" type="text"
-							maxlength="12" style="width: 100%;" value="2000 MRU" readonly />
+							maxlength="12" style="width: 100%;" value="20.00 MRU" readonly />
 					</div>
 					<div>
 						<label for="requiredDate">Date requise</label> <input

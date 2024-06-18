@@ -74,7 +74,7 @@ public class OrderUserServlets extends HttpServlet {
 					OrderServiceImplements orderServiceImplements = new OrderServiceImplements();
 					status = orderServiceImplements.sendOrder(customerID, Integer.parseInt(discount),
 							Double.parseDouble(totalPrice), Integer.parseInt(selectedAddressId), recipientPhone,
-							2000.00, requiredDate, shoppingArrayList);
+							20.00, requiredDate, shoppingArrayList);
 					if ("Votre commande a été passée avec succès!".equalsIgnoreCase(status.get(0))) {
 						CustomerBean customerBean = (CustomerBean) session.getAttribute("userdata");
 						customerBean.setCartCount(0);

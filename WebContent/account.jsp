@@ -6,6 +6,7 @@
 <c:import url="header.jsp" />
 <div class="container mt-5">
 	<h1>Bonjour ${sessionScope.userdata.customerName }</h1>
+	<p>Votre solde est :<i> ${sessionScope.userdata.solde }MRU</i></p>
 	<div class="row">
 		<div class="col-md-4 card-account" onclick="redirectToOrders()">
 			<div class="card p-3">

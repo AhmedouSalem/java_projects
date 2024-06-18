@@ -73,6 +73,7 @@ public class VeirfyCodeServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		System.out.println(request.getParameter("forgetPassword"));
 
 		if (request.getParameter("forgetPassword") == null) {
 			// Récupérer les données du formulaire

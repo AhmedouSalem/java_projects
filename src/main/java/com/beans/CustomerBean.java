@@ -15,6 +15,7 @@ public class CustomerBean implements Serializable {
     private int cartCount;
     private int verifyCode;
     private long isActive;
+    private double solde;
 
     // Constructors
     public CustomerBean() {
@@ -30,6 +31,7 @@ public class CustomerBean implements Serializable {
         this.addressCity = addressCity;
         this.addressId = addressId;
         this.cartCount = cartCount;
+//        this.solde = solde;
     }
 
     // Getters and Setters
@@ -60,6 +62,11 @@ public class CustomerBean implements Serializable {
     public String getCustomerEmail() {
         return customerEmail;
     }
+    
+    public double getSolde() {
+		return solde;
+	}
+    
 
     public void setCustomerEmail(String customerEmail) {
         this.customerEmail = customerEmail;
@@ -119,5 +126,9 @@ public class CustomerBean implements Serializable {
     
     public void setIsActive(long isActive) {
 		this.isActive = isActive;
+	}
+    
+    public void setSolde(double solde) {
+		this.solde = solde;
 	}
 }

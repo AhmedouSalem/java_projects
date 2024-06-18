@@ -35,7 +35,7 @@
 								class="fa fa-plus text-success"></i></a>
 						</div>
 						<div>
-							<h5 class="text-grey">${product.listPrice}</h5>
+							<h5 class="text-grey">${product.listPrice} MRU</h5>
 						</div>
 						<div class="d-flex align-items-center">
 							<a href="./ViewCart?deleteProduct=${product.productId }"> <i
@@ -54,7 +54,7 @@
 						<div class="p-2">
 							<div class="d-flex flex-row align-items-center pull-right">
 								<span class="mr-1">Prix total :</span><span
-									class="mr-1 font-weight-bold"> ${totalPrice} </span>
+									class="mr-1 font-weight-bold"> ${totalPrice} MRU</span>
 							</div>
 						</div>
 						<form method="post">
@@ -67,13 +67,29 @@
 								<button class="btn btn-sm ml-2 penguin-btn" type="submit"
 									formaction="./ViewCart" ${isDisabled}>Appliquer</button>
 							</div>
-							<div
-								class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
-								<button class="btn penguin-btn btn-block btn-lg ml-2 pay-button"
-									type="submit"
-									formaction="./OrderUserServlets?totalPrice= ${totalPrice}&discount=${discount}&cartCount=${cartCount}">Passer
-									la commande</button>
-							</div>
+							<c:choose>
+								<c:when test="${sessionScope.userdata.solde < totalPrice}">
+									<p><i>Vous ne pouvez pas passer le commande car votre solde "${sessionScope.userdata.solde } MRU"  est insuffisant</i></p>
+									<div
+										class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
+										<button
+											class="btn penguin-btn btn-block btn-lg ml-2 pay-button"
+											type="submit"
+											formaction="./OrderUserServlets?totalPrice= ${totalPrice}&discount=${discount}&cartCount=${cartCount}" disabled="disabled">Passer
+											la commande</button>
+									</div>
+								</c:when>
+								<c:otherwise>
+									<div
+										class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded">
+										<button
+											class="btn penguin-btn btn-block btn-lg ml-2 pay-button"
+											type="submit"
+											formaction="./OrderUserServlets?totalPrice= ${totalPrice}&discount=${discount}&cartCount=${cartCount}">Passer
+											la commande</button>
+									</div>
+								</c:otherwise>
+							</c:choose>
 						</form>
 					</c:otherwise>
 				</c:choose>
