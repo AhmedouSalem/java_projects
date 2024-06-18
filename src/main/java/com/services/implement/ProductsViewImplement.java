@@ -56,7 +56,7 @@ public class ProductsViewImplement implements ProductsService {
 		ResultSet rs = null;
 
 		try {
-			ps = con.prepareStatement("select * from ProductDetailsView");
+			ps = con.prepareStatement("select * from productdetailsview");
 
 			rs = ps.executeQuery();
 

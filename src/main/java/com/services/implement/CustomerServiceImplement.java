@@ -110,7 +110,7 @@ public class CustomerServiceImplement implements CustomerServices {
 		ResultSet rs = null;
 
 		try {
-			ps = con.prepareStatement("select * from CustomerView where customer_email=? and customer_password=md5(?)");
+			ps = con.prepareStatement("select * from customerview where customer_email=? and customer_password=md5(?)");
 
 			ps.setString(1, emailId);
 			ps.setString(2, password);
@@ -141,7 +141,7 @@ public class CustomerServiceImplement implements CustomerServices {
 		ResultSet rs = null;
 
 		try {
-			ps = con.prepareStatement("select * from CustomerView where customer_email=? and customer_password=md5(?)");
+			ps = con.prepareStatement("select * from customerview where customer_email=? and customer_password=md5(?)");
 			ps.setString(1, emailId);
 			ps.setString(2, password);
 			rs = ps.executeQuery();
@@ -184,7 +184,7 @@ public class CustomerServiceImplement implements CustomerServices {
 		ResultSet rs = null;
 
 		try {
-			ps = con.prepareStatement("select * from CustomerView where customer_email=?");
+			ps = con.prepareStatement("select * from customerview where customer_email=?");
 			ps.setString(1, email);
 			rs = ps.executeQuery();
 
